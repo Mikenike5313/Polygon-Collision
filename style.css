@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+#sidebarHead {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: gray;
+}
+#controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 20vw;
+  box-sizing: border-box;
+}
+#plane {
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  height: 100vh;
+  width: 80vw;
+  background-color: black;
+}

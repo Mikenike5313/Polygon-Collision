@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polygon Collisions</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+
+    <div id="controls" oninput="update()">
+
+      <div id="sidebarHead">
+        <h1>Controls</h1>
+      </div>
+
+      <div id="cMode">
+        <p>Choose Collision Mode:</p>
+        <input type="radio" name="cMode" value="point" checked>Polygon -> Point
+        <br>
+        <input type="radio" name="cMode" value="polygon">Polygon -> Polygon
+        <br>
+      </div>
+
+      <br>
+
+      <div id="pMode">
+        <p>Choose Polygon Mode:</p>
+        <input type="radio" name="pMode" value="custom">Custom
+        <br>
+        <input type="radio" name="pMode" value="regular" checked>Regular Polygons
+        <br>
+      </div>
+
+      <div id="a">
+        <p>Apothem:</p>
+        <input type="range" min="1" max="200" value="100">
+      </div>
+
+      <div id="n">
+        <p>Sides:</p>
+        <input type="range" min="3" max="40" value="3">
+      </div>
+
+      <div id="a2">
+        <p>Pointer Apothem:</p>
+        <input type="range" min="1" max="200" value="100">
+      </div>
+
+      <div id="n2">
+        <p>Pointer Sides:</p>
+        <input type="range" min="3" max="40" value="3">
+      </div>
+
+      <div id="v">
+        <p>Vertices:</p>
+        <textarea type="" placeholder="Format: x1,y1 x2,y2 ..." value=""></textarea>
+      </div>
+
+    </div>
+
+    <canvas id="plane" onmousemove="mousemove(event)"></canvas>
+
+    <script src="./script.js"></script>
+
+  </body>
+</html>
